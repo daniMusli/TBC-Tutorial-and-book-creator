@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <title>tutorial main page</title>
+
+        <!-- Bootstrap CSS CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <!-- Our Custom CSS -->
+        <link rel="stylesheet" href="tutorial main page.css">
+		
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    </head>
+    <body>
+
+
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div>
+                    <img src="58480979cef1014c0b5e4901.png" width="180" height="130" class="center" >
+                </div>
+				<div class="sidebar-header">
+                    <h4>Java Programming</h4>
+                </div>
+				<hr>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Basic Tutorial</a>
+                        <ul class="collapse list-unstyled" id="homeSubmenu">
+                            <li><a href="hello world.html">Hello, World!</a></li>
+                            <li><a href="#">Variables and Types</a></li>
+                            <li><a href="#">Conditionals</a></li>
+							<li><a href="#">Arrays</a></li>
+							<li><a href="#">Loops</a></li>
+							<li><a href="#">Functions</a></li>
+							<li><a href="#">Objects</a></li>
+							<li><a href="#">Compiling and Running with Arguments</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                 
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Advanced Topics</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="#">Inheritance</a></li>
+                            <li><a href="#">Try and Catch</a></li>
+                            <li><a href="#">Abstract Classes</a></li>
+							<li><a href="#">Interfaces</a></li>
+							<li><a href="#">Using Generics</a></li>
+							<li><a href="#">Collections</a></li>
+							<li><a href="#">Wrappers and Autoboxing</a></li>
+							<li><a href="#">Exceptions</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">References</a>
+                    </li>
+
+                </ul>
+
+
+            </nav>
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Toggle Sidebar</span>
+                            </button>
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#">Home Page</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#">Q&A </a></li>
+                                <li><a href="#">Github</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-lg-10">
+							<ul class="breadcrumb">
+								<li><h2>Java Programming</h2></li>
+							</ul>
+						</div>
+						<div class="col-lg-2">
+							<div class="dropdown">
+								<button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown">Options
+								<span class="caret"></span></button>
+								<ul class="dropdown-menu">
+									<li data-toggle="modal" data-target="#addModal"><a href="#">Add Chapter</a></li>
+									<li data-toggle="modal" data-target="#deleteModal"><a href="#">Delete Documnet</a></li>
+									
+								</ul>
+							</div>
+						</div>				
+					</div>
+				</div>	
+
+				<!--the delete document Modal -->
+				<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+      							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+							<strong>Are you Sure You Want To Delete This Document ?</strong> 
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+								<button type="button" class="btn btn-danger">Delete</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--the add section  Modal -->
+				<div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+      							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<form>
+									<div class="form-group">
+										<label for="title">Title:</label>
+										<input type="text" class="form-control" id="title">
+									</div>
+									<div class="form-group">
+										<label for="description">Description:</label>
+										<textarea class="form-control" rows="5" id="description"></textarea>
+									</div>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+								<button type="button" class="btn btn-primary">Add</button>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="panel-group">
+					<div class="panel panel-default">
+						<div class="panel-heading"><h4>Document Description</h4></div>
+						<div class="panel-body"><p>Our Java Tutorial or Core Java Tutorial or Java Programming Tutorial is designed for students and working professionals. Java is an object-oriented, class-based, concurrent, general-purpose computer-programming language and widely used robust technology. Let's start learning Java from basic questions like what is Java, Core Java, where it is used, what type of applications are created in Java, why use java and Java platforms etc. Our Java tutorial helps you to learn Java with easy and simple examples.</p></div>
+					</div>
+					<div class="line"></div>
+					<div class="panel panel-info">
+						<div class="panel-heading"><h4>Authors And Editors </h4></div>
+						<div class="panel-body"><strong>Abdullah Mousselli AND Bayan Abu</strong></div>
+					</div>
+					<div class="line"></div>
+				<p> Press on the link below to preview the table of contents for this book</p>
+				 <a	href="book table of content.html" style="text-decoration:none;border-bottom:1px dotted blue;">
+					Table of Contents</a>
+				
+                
+				
+				
+            </div>
+        </div>
+
+
+
+
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <!-- jQuery Custom Scroller CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+		
+		
+        <script type="text/javascript">
+		
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar, #content').toggleClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+    </body>
+</html>

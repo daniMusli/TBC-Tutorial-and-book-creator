@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>to do list flavored table of contents </title>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8">    
+  </head>
+  <body>
+  <h2>TABLE OF CONTENTS</h2>
+  <P><b>in this page you can create,edit and delete sections of the selected chapter<b/></p>
+    <div class="container">
+	
+      <p>
+        <label for="new-task">Add section </label><input id="new-task" type="text"><button>Add</button>
+      </p>
+      
+      <h3>sections that are still being worked on</h3>
+      <ul id="incomplete-tasks">
+        <li><input type="checkbox"><label>hello world </label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        <li><input type="checkbox"><label>types and variables</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+        
+      </ul>
+      
+      <h3>Completed sections</h3>
+      <ul id="completed-tasks">
+        <li><input type="checkbox" checked><label>arrays </label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+      </ul>
+    </div>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
+  </body>
+</html>
