@@ -121,7 +121,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 <script>
 	AWS.config.region = 'us-east-1'; // 1. Enter your region
     AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-        IdentityPoolId: 'us-east-1:c3aa7213-ceb7-49b8-a41c-ec268252f89b' // 2. Enter your identity pool
+        IdentityPoolId:  // 2. Enter your identity pool
     });
 
     AWS.config.credentials.get(function(err) {
@@ -129,7 +129,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
         console.log(AWS.config.credentials);
     });
 
-    var bucketName = 'projeicindemo'; // Enter your bucket name
+    var bucketName = // Enter your bucket name
     var bucket = new AWS.S3({
         params: {
             Bucket: bucketName
