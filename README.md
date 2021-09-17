@@ -1,4 +1,4 @@
-# Tobo
+# TBC Tutorial and book creator
 Tutorial And Book creator 
 
 Tobo is a simple Tutorial and book creator it was designed to easily help the writer organize the chapters and the sections he is working on 
