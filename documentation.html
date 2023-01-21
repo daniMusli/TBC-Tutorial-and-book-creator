@@ -254,10 +254,10 @@ body {font-family: Arial, Helvetica, sans-serif;}
 						}).send(function(err, data) {
 							if(!err) {
 									pbar.style.display = "none"
-									results.innerHTML =  "your image got uploaded to :https://s3.amazonaws.com/projeicindemo/" +file.name;
+									results.innerHTML =  "" +file.name;
 									pos = simplemde.codemirror.getCursor();
 									simplemde.codemirror.setSelection(pos, pos);
-									simplemde.codemirror.replaceSelection("![](https://s3.amazonaws.com/projeicindemo/"+file.name+")");
+									simplemde.codemirror.replaceSelection("+file.name+")");
 									modal.style.display = "none";
 									
 									}                               
